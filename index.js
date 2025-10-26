@@ -27,3 +27,28 @@ const posts = [
         likes: 152
     }
 ]
+
+const postSection = document.getElementById("post-section");
+
+function renderPosts(){
+    for (let i=0;i<posts.length;i++){
+        let postContent = `
+            <section class="profile-section">
+                    <img src=${posts[i].avatar} alt="Courbet Profile Picture" class="profile-pic">
+                    <p id="name">${posts[i].name}</p>
+                    <p id="location">${posts[i].location}</p>
+                </section>
+                <img src=${posts[i].post} class="post-img">
+                <section id="post-interaction">
+                    <img src="/images/icon-heart.png">
+                    <img src="/images/icon-comment.png">
+                    <img src="/images/icon-dm.png">
+                    <p id="likes">${posts[i].likes} likes</p>
+                    <p><span id="user-name">${posts[i].username}</span> ${posts[i].comment}</p>
+                </section>
+        `;
+        postSection.innerHTML += postContent;
+    }
+}
+
+renderPosts();
