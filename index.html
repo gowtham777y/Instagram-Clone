@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="/images/logo.png">
-            <img src="/images/user-avatar.png" alt="Profile Picture">
+            <img src="/images/logo.png" class="logo">
+            <img src="/images/user-avatar.png" alt="Profile Picture" class="profile-pic">
         </header>
-        <section>
-            <section>
-                <img src="/images/avatar-courbet.jpg" alt="Courbet Profile Picture">
-                <p>
-                    Gustave Courbet
-                </p>
-                <p>
-                    Ornans, France
-                </p>
+        <section id="post-section">
+            <section class="profile-section">
+                <img src="/images/avatar-courbet.jpg" alt="Courbet Profile Picture" class="profile-pic">
+                <p id="name">Gustave Courbet</p>
+                <p id="location">Ornans, France</p>
             </section>
-            <img src="/images/post-courbet.jpg" >
-            <section>
+            <img src="/images/post-courbet.jpg" class="post-img">
+            <section id="post-interaction">
                 <img src="/images/icon-heart.png">
                 <img src="/images/icon-comment.png">
                 <img src="/images/icon-dm.png">
+                <p id="likes">12,506 likes</p>
+                <p><span id="user-name">gus1819</span> I'm feeling a bit stressed tbh</p>
             </section>
-            <p>12,506 likes</p>
-            <p><span>gus1819</span> I'm feeling a bit stressed tbh</p>
         </section>
     </div>
 </body>
