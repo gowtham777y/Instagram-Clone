@@ -69,8 +69,13 @@ header{
 #likes{
     margin-top: 10px;
     font-weight: 700;
+    margin-bottom: 0px;
 }
 
 #user-name{
     font-weight: 700;
+}
+
+#caption{
+    margin: 10px 0px;
 }

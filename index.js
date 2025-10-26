@@ -44,7 +44,7 @@ function renderPosts(){
                     <img src="/images/icon-comment.png">
                     <img src="/images/icon-dm.png">
                     <p id="likes">${posts[i].likes} likes</p>
-                    <p><span id="user-name">${posts[i].username}</span> ${posts[i].comment}</p>
+                    <p id="caption"><span id="user-name">${posts[i].username}</span> ${posts[i].comment}</p>
                 </section>
         `;
         postSection.innerHTML += postContent;
